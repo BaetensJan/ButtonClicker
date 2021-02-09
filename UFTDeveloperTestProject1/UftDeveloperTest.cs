@@ -21,6 +21,8 @@ namespace UFTDeveloperTestProject1
         public void SetUp()
         {
             // Before each test
+
+
             // Define in autConfig located in your %localappdata%/LeanFT/config folder.
             // Create authConfig.json file if not present and structure it like described here
             // https://admhelp.microfocus.com/uftdev/en/15.0-15.0.2/HelpCenter/Content/HowTo/TestObjects_Manual.htm#Run

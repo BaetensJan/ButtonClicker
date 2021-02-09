@@ -6,9 +6,24 @@
         xmlns:local="clr-namespace:ButtonClicker"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button x:Name="clickMeButton" Content="Click Me!" HorizontalAlignment="Left" Margin="362.5,215.4,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="299.2,104.5,0,0" TextWrapping="Wrap" TextAlignment="Center" Text="You clicked {num} times on the button" VerticalAlignment="Top"/>
+        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+            
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" TextAlignment="Center" Text="You clicked {num} times on the button" VerticalAlignment="Center"/>
+        <Button x:Name="clickMeButton" Content="Click Me!" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Width="75" Click="Button_Click"/>
+
+        <Grid />
+            
 
     </Grid>
 </Window>
